@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpectraLab | 머신비전 & 자동화 소프트웨어</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    * { font-family: 'Pretendard', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #ffffff; color: #333; display: flex; scroll-behavior: smooth; }
+    nav { width: 200px; background: #1976d2; color: white; height: 100vh; position: fixed; padding: 1rem; display: flex; flex-direction: column; gap: 1rem; }
+    nav img { width: 100%; margin-bottom: 1rem; }
+    nav h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { color: #bbdefb; }
+    main { margin-left: 200px; width: calc(100% - 200px); }
+    header { padding: 4rem 2rem; text-align: left; animation: fadeInDown 1s; background: #e3f2fd; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 80px; }
+    header div { flex: 1; }
+    header h2 { font-size: 3rem; margin-bottom: 0.5rem; color: #1565c0; }
+    header p { font-size: 1.2rem; color: #1976d2; }
+    section { padding: 3rem; animation: fadeInUp 1s; }
+    h2 { font-size: 2rem; color: #1565c0; margin-bottom: 1rem; }
+    ul { list-style: none; }
+    ul li { margin-bottom: 0.5rem; }
+    .tech-icons { display: flex; gap: 1rem; margin-bottom: 1rem; }
+    .tech-icons img { height: 40px; }
+    .project { margin-bottom: 2rem; padding: 1.5rem; background: #f1f8e9; border-radius: 8px; }
+    .project-title { font-weight: bold; font-size: 1.2rem; margin-bottom: 0.75rem; color: #2e7d32; }
+    .project-desc { color: #424242; line-height: 1.5; }
+    footer { background: #1976d2; color: white; text-align: center; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="SpectraLabCI3.PNG" alt="SpectraLab 로고">
+    <h1>SpectraLab</h1>
+    <a href="#about">소개</a>
+    <a href="#profile">대표 이력</a>
+    <a href="#stack">기술 스택</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#contact">문의</a>
+  </nav>
+  <main>
+    <header class="animate__animated animate__fadeInDown">
+      <div>
+        <h2>SpectraLab</h2>
+        <p>산업용 머신비전 및 자동화 장비 소프트웨어 전문 개발</p>
+      </div>
+      <img src="SpectraLabCI2.PNG" alt="SpectraLab CI">
+    </header>
+
+    <section id="about">
+      <h2>소개</h2>
+      <p>스펙트라랩은 산업 현장의 정밀 검사, 고속 제어, 자동화 소프트웨어를 전문적으로 개발합니다. 대표는 영상처리 전공자로, 다양한 분야에서의 풍부한 경험을 통해 고객 맞춤형 솔루션을 제공합니다.</p>
+    </section>
+
+    <section id="profile" class="animate__animated animate__fadeInUp">
+      <h2>대표 이력</h2>
+      <ul>
+        <li>석사 전공: 디지털 신호 처리 (영상처리)</li>
+        <li>학사 전공: 전자공학</li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <h2>기술 스택</h2>
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+      </div>
+      <ul>
+        <li><strong>C++, C#</strong>: 제어/영상처리 소프트웨어 개발 및 사용자 인터페이스(UI) 구현</li>
+        <li><strong>OpenCV, CUDA</strong>: 영상 전처리 및 고속 병렬 처리 기반의 머신비전 알고리즘</li>
+        <li><strong>RTOS, PLC</strong>: 다축 모션 및 시퀀스 제어, 실시간 제어 시스템 개발</li>
+        <li><strong>SQLite, MariaDB</strong>: 검사 데이터 저장 및 분석을 위한 데이터베이스 연동</li>
+        <li><strong>Serial, TCP/IP, OPC-UA</strong>: 장비 간 통신 및 프로토콜 구현</li>
+        <li><strong>EPLAN, 웹 HMI</strong>: 전장 설계 및 웹 기반 HMI 개발</li>
+        <li><strong>Matlab, Eigen</strong>: 신호처리 및 수치 계산, 시각화</li>
+        <li><strong>Python, PyTorch</strong>: 딥러닝 모델 설계와 세그멘테이션, 분류 작업, 시각화</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>주요 프로젝트</h2>
+      <!-- 산업용 최신 순서 -->
+      <div class="project">
+        <div class="project-title">용접 비드 품질 평가 시스템 (2025)</div>
+        <div class="project-desc">
+          • 딥러닝 U-Net 기반 세그멘테이션으로 용접 비드 형상 검출
+          <br>• 비드 선형성, 흑화, 블로우홀 등 품질 지표 산출 및 등급화
+          <br>• 평균 IoU 0.89, 전체 검사 루틴 130ms 이내 완료, 실시간 피드백 제공
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">웨이퍼 비전 검사 장비 개발 (2022–현재)</div>
+        <div class="project-desc">
+          • 16K 라인스캔 카메라 기반 2D/3D 검사 시스템 설계 및 구현
+          <br>• CUDA·멀티스레딩 활용 9GB 이미지 3초 내 처리, WPH 목표 달성
+          <br>• 주기적 Reference 이미지 자동 생성 및 Alignment 알고리즘 적용
+          <br>• 글로벌 반도체 제조사 샘플 데이터 분석 및 보고서 제공
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">차량 하향등 검사기 개발 (2020–2021)</div>
+        <div class="project-desc">
+          • 하향등 밝기·Cut-off 라인 정밀 측정 알고리즘 개발
+          <br>• 전자동·반자동 검사 모드 구현, PID 기반 노출 제어
+          <br>• 약 400대 납품 및 운영 교육, 현지 설치 지원
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">전기차 배터리 밸런싱 장비 (2020)</div>
+        <div class="project-desc">
+          • 실시간 배터리 전압·전류 밸런싱 모니터링 시스템 구축
+          <br>• 충·방전 보드 제어 및 장비 UI 개발
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">카메라 모듈 검사 장비 (2018–2019)</div>
+        <div class="project-desc">
+          • Fixed/Auto Focus 카메라 모듈 캘리브레이션·결함 검출 알고리즘 개발
+          <br>• 모션 제어 시퀀스 설계 및 현지 데모 운영 지원
+          <br>• 고객 Custom DLL 연동으로 검사 정확도 보장
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">Fish eye 카메라 캘리브레이션 장비 알고리즘 개발 (2019)</div>
+        <div class="project-desc">
+          • 어라운드뷰 시스템용 Fish eye 렌즈 왜곡 보정 알고리즘 구현
+          <br>• Chess board 패턴 기반 Intrinsic 파라미터 자동 최적화
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">TOF 모듈 캘리브레이션 및 데모 장비 (2019)</div>
+        <div class="project-desc">
+          • TOF(Time-of-Flight) 카메라 실시간 캘리브레이션 시퀀스 개발
+          <br>• SDK/UI 개발로 3D Depth 데이터 Point Cloud 시각화 지원
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">대형 유압 사출기 제어 SW 및 HMI (2016–2018)</div>
+        <div class="project-desc">
+          • RTOS PLC 기반 다축 모션·유압 PID 제어 알고리즘 개발
+          <br>• 웹 기반 HMI와 기존 코어 SW 통합, 전시 및 양산 실적 보유
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">초미세 발포 플라스틱 성형기 개발 (2017–2018)</div>
+        <div class="project-desc">
+          • 초임계 가스 상태 유지 제어 및 Core-back 동기화 기능 개발
+          <br>• 자동차 부품 경량화 테스트 및 검증 완료
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">사과 색상 선별 프로그램 (2014–2015)</div>
+        <div class="project-desc">
+          • MFC 기반 이미지 전처리 및 HSV 컬러 인덱싱으로 과일 품질 판별
+          <br>• 모폴로지 처리 및 색상 통계 분석으로 자동 선별 구현
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">Hand Gesture Recognition (2014)</div>
+        <div class="project-desc">
+          • HOG+SVM 기반 제스처 인식 모델로 프레젠테이션 제어 소프트웨어 개발
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">비파괴 당도 측정기 개발 (2013–2014)</div>
+        <div class="project-desc">
+          • NIR 분광 분석 및 회귀 모델 최적화로 당도 예측 정확도 향상
+          <br>• 제어 보드 S/W 개발 및 데이터 분석 툴 구현
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">그래픽 이퀄라이저 설계 및 제작 (2012–2013)</div>
+        <div class="project-desc">
+          • 저계산량 IIR 기반 10밴드 그래픽 이퀄라이저 설계 및 스마트폰 UI 앱 연동
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="animate__animated animate__fadeInUp" style="padding: 4rem 2rem; background: #e3f2fd;">
+      <h2>문의하기</h2>
+      <p>대표: 윤종민</p>
+      <p>이메일: <a href="mailto:spectralab.co@gmail.com" style="color: #1565c0;">spectralab.co@gmail.com</a></p>
+      <p>전화: 010-9118-2709</p>
+    </section>
+    <footer style="background: #1976d2; color: white; text-align: center; padding: 1rem;">
+      <p>&copy; 2025 SpectraLab. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
